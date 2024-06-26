@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы на Bootstrap 5.3</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 600px; /* Задайте нужную высоту */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Бритый Кактус</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сервисы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container mt-4">
+        <!-- Секция со слайдером -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.etsystatic.com/29333976/r/il/67f92b/3845365177/il_1588xN.3845365177_a806.jpg" class="d-block w-100" alt="Astrophytum">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.etsystatic.com/36720535/r/il/7d726c/4029322972/il_1588xN.4029322972_7boi.jpg" class="d-block w-100" alt="Изображение 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.etsystatic.com/51211315/r/il/b961b8/5882982372/il_1588xN.5882982372_m85h.jpg" class="d-block w-100" alt="Изображение 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+        <!-- Секция с карточками -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.insales-cdn.com/images/products/1/7669/769752565/large_IMG_5143.jpg" class="card-img-top" alt="Литопсы">
+                    <div class="card-body">
+                        <h5 class="card-title">ЛИТОПСЫ</h5>
+                        <p class="card-text">Литопс – крошечный и неприхотливый декор для любого современного интерьера.Высота надземной части – до 5 см. Сросшиеся толстые листья серо-зеленого цвета напоминают пеньки </p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.insales-cdn.com/images/products/1/4237/771788941/large_IMG_5461.jpg" class="card-img-top" alt="Кристатные">
+                    <div class="card-body">
+                        <h5 class="card-title">КРИСТАТНЫЕ</h5>
+                        <p class="card-text">Кристатная разновидность кактусов до сих пор остается загадкой. Гребенчатая форма стебля растения появляется естественным путем, приобретая со временем все новые изгибы,</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://static.insales-cdn.com/images/products/1/6982/814725958/large_IMG_9580.jpeg" class="card-img-top" alt="ГИМНОКАЛИЦИУМ КРАСНЫЙ">
+                    <div class="card-body">
+                        <h5 class="card-title">ГИМНОКАЛИЦИУМ КРАСНЫЙ</h5>
+                        <p class="card-text">«Красная шапка», японский Гимнокалициум. Такое название он получил благодаря цвету и оригинальной форме своего шарообразного стебля со слегка приплюснутой макушкой</p>
+                        <a href="#" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Секция аккордеона -->
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        КАКТУСЫ
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+Изысканные вечнозеленые растения, которые способны украшать пространство, не требуя взамен ничего лишнего. Они удивляют разнообразием окрасов, размеров и форм, радуют редким, но таким красивым цветением!
+
+Кактусы неприхотливы. Они способны долго обходиться без воды – ее запасы всегда имеются в широких стеблях и колючках. Суккуленты предпочитают солнечный свет и свежий воздух. Они спокойно относятся к перепадам температуры, но нужно держать их подальше от сквозняков.
+
+Оригинальный кактус – прекрасный подарок ценителю всего необычного.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        СУККУЛЕНТЫ
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Суккуленты — группа растений родом из засушливых областей Южной Америки, Мадагаскара и Африки с большими природными перепадами температур. Всех их объединяет одна особенность, хорошо знакомая нам благодаря кактусам: способность запасать воду на довольно продолжительное время и в период засухи экономно её расходовать. Как правило, именно этот факт привлекает «чайников»: суккуленты стоически переживают и неправильных уход, и несколько пропущенных поливов.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        КАУДЕКСНЫЕ
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+
+Каудексные растения относятся к интереснейшей группе Бутылочных. Оригинальный вид приобрели благодаря утолщенной прикорневой части стебля, - каудексу. В этом одревесневшем образовании хранятся запасы воды и питательных веществ.
+Способны украсить коллекцию любого цветовода. Порадуют любителей стиля Бонсай, компактные деревца из таких растений можно сформировать всего за пару лет.
+Идеально подходят для размещения на солнечных подоконниках. Удивительный вид каудексных растений не оставляют равнодушным никого.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Контактная информация</h5>
+                    <p>
+                        Здесь находится ваша контактная информация.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Социальные сети</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-dark">Facebook</a></li>
+                        <li><a href="#!" class="text-dark">Twitter</a></li>
+                        <li><a href="#!" class="text-dark">Instagram</a></li>
+                        <li><a href="#!" class="text-dark">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright: Alex Efimov
+            <a class="text-dark" href="#">Название сайта</a>
+        </div>
+    </footer>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
